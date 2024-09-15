@@ -81,7 +81,7 @@ for (let i = 0; i < maestras.length; i++) {
     let mensaje_final = [];
     mensaje_final = (textarray.slice());
     
-    let newfrase = nombre(mensaje_final,maestras[i])
+    let newfrase = nuevotexto(mensaje_final,maestras[i])
     console.log(newfrase)
    
   
@@ -133,7 +133,7 @@ for (let i = 0; i < maestras.length; i++) {
 
 // -----------Frase ---------------------------
 
-function nombre(array,datos) {
+function nuevotexto(array,datos) {
    
    
     for (let k = 0 ; k < array.length ; k++){
@@ -147,7 +147,21 @@ function nombre(array,datos) {
 
             
             
+        }else if ((array[k]) == '(barrio)'){
+            
+            array[k] = datos[3]
+
+
+
+
+            
+            
         }
+
+        
+
+
+
     } 
 
     
