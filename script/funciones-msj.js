@@ -4,6 +4,8 @@
 const maestras = [
 
     //Lideres y empleados
+    //NOMBRE, TELEFONO , ROL , BARRIO, XMENSAJE
+    
     ["Luciano",5492615894553,"Administrativo de instituto", "Instituto",'Mensaje'],
     ["Fabiana",5492615893612,"Supervisora de seminario",'Mendoza','Mensaje'],
     ["Micaela",5492615893612,"Maestra de Seminario",'Mendoza','Mensaje']
