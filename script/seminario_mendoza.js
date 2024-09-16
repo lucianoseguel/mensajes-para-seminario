@@ -133,8 +133,7 @@ const maestras_SanRafael = [
 
 
 
- //ejecuta la tabla constantemente
-
+ //Define las variables globales
 
 let mensaje = document.getElementById('mensaje')
 let textarray = [] //Este es el texto que escribimos que quedara en un array para reutilizarlo
@@ -144,6 +143,7 @@ let maestras = NaN
 
 
 
+//Obtenemos el texto escrito en el area
 
 mensaje.addEventListener('input', function() {
     // Obtenemos el valor del textarea
