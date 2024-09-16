@@ -67,7 +67,7 @@ const maestras_mendoza = [
     ["Luciano",5492615894553,"Administrativo de instituto", "Instituto",'Mensaje'],
     ["Fabiana",5492615893612,"Supervisora de seminario",'Mendoza','Mensaje'],
     ["Micaela",5492615893612,"Maestra de Seminario",'Mendoza','Mensaje'],
-    ['Jose', 5492614184609, 'Maestro de seminario','La Favorita', 'Mensaje' ]
+    ['Jose', 5492614184609, 'Maestro de seminario','La Favorita', 'Mensaje' ],
     ["Norma", 5492616121128, "Maestra de seminario", "San Miguel", "Mensaje"],
     ["Elina", 5492615387347, "Maestra de seminario", "Plumerillo 2", "Mensaje"],
     ["Ivana", 5492612527277, "Maestra de seminario", "Cementista", "Mensaje"],
@@ -168,7 +168,7 @@ estaca.addEventListener('input', function(){
     console.log(estacaselected)
 
     if (estacaselected == 'TODO'){
-        
+
         maestras =  todaslasestacas;
 
     } else if (estacaselected == 'Mendoza'){
