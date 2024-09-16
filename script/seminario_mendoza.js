@@ -138,7 +138,7 @@ const maestras_SanRafael = [
 let mensaje = document.getElementById('mensaje')
 let textarray = [] //Este es el texto que escribimos que quedara en un array para reutilizarlo
 let estaca = document.getElementById('estacas')
-let maestras = NaN
+let maestras =  todaslasestacas
 //--------------------------Texto y como funciona----------------------------------
 
 
