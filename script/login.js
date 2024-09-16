@@ -4,13 +4,18 @@ let contrasena = 'lucianoseguel#'
 let inputuser = document.getElementById('floatingInput')
 let inputpassword = document.getElementById('floatingPassword')
 
-inputuser.addEventListener('input',function(){
+
+
+let user = inputuser.addEventListener('input',function(){
     let user = inputuser.value
-    console.log('user')
+    console.log(user)
 })
 
-inputpassword.addEventListener('input',function(){
-    inputpassword = document.getElementById('floatingPassword')
+
+
+let pass = inputpassword.addEventListener('input',function(){
+    let pass = inputpassword.value
+    console.log(pass)    
 })
     
 
@@ -20,7 +25,7 @@ function verificador(){
     
     
 
-    if (inputuser == usuario && inputpassword == contrasena) {
+    if (toString(user)  == usuario && toString(pass) == contrasena) {
         window.location.href = 'index.html';
     }else{
         alert('no coincide')
