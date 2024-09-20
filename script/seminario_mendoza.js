@@ -4,7 +4,7 @@
 //ARRAY GLOBAL DE LAS MAEASTRAS 
 const todaslasestacas = [
     // Mendoza
-    ["Luciano", 5492615894553, "Administrativo de instituto", "Instituto", "Mensaje", `Enviar mensaje`],
+    ["Luciano", 5492615894553, "Administrativo de instituto", "Instituto", "Mensaje","Enviar Mensaje"],
     ["Fabiana", 5492615893612, "Supervisora de seminario", "Mendoza", "Mensaje", "Enviar mensaje"],
     ["Micaela", 5492615893612, "Maestra de Seminario", "Mendoza", "Mensaje", "Enviar mensaje"],
     ["Jose", 5492614184609, "Maestro de seminario", "La Favorita", "Mensaje", "Enviar mensaje"],
@@ -252,16 +252,25 @@ for (let i = 0; i < maestras.length; i++) {
         if (maestras[i][j] == maestras[i][4]){ //Funcion para escribir la frase y reemplazarla
 
             maestras[i][j] = newfrase.join(' ');
+            cell.textContent = maestras[i][j]; //Añade un nueva celda con la informacion
+             // Añadimos la celda a la fila
+        row.appendChild(cell);
             
         } else if (maestras[i][j] == maestras[i][5]){ //condicional para que envie el mensaje
             maestras[i][5] = generador_link_wsp(newfrase.join(" "), maestras[i])
-        }
+
+            cell.innerHTML = maestras[i][j]; //Añade un nueva celda con la informacion
+             // Añadimos la celda a la fila
+        row.appendChild(cell);
+            
+        }else{
 
          cell.textContent = maestras[i][j]; //Añade un nueva celda con la informacion
-
-
-        // Añadimos la celda a la fila
+             // Añadimos la celda a la fila
         row.appendChild(cell);
+        }
+
+       
     }
 
     // Añadimos la fila completa al cuerpo de la tabla
@@ -314,9 +323,20 @@ function generador_link_wsp(mensaje,datos){
     
     let numero = datos[1]
     
-    let url = `<a href="https://api.whatsapp.com/send?phone=${numero}&text=${mensaje}">Enviar Mensaje</a>`
     
-    return url
+    let url = document.createElement("a");
+    url.href = `https://api.whatsapp.com/send?phone=${numero}&text=${mensaje}`; // Asignar la URL del array
+    url.textContent = "Enviar Mensaje"; // Asignar el texto del enlace 
+    url.target = "_blank";
+
+    return url;
+}
+
+//----------------------------Conversos re elemntos HTML--------------
+function texto_a_enlace(texto) {
+    const div = document.createElement('a');
+    div.innerHTML = texto.trim();
+    return div.firstChild;
 }
 
 
