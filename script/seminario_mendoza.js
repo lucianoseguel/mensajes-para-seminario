@@ -249,32 +249,15 @@ for (let i = 0; i < maestras.length; i++) {
         // Creamos una celda (td) y asignamos el dato correspondiente
         let cell = document.createElement('td');
         
-        if (maestras[i][j] == maestras[i][4]){
-            
-         
-           
+        if (maestras[i][j] == maestras[i][4]){ //Funcion para escribir la frase y reemplazarla
+
             maestras[i][j] = newfrase.join(' ');
             
-            }
+        } else if (maestras[i][j] == maestras[i][5]){ //condicional para que envie el mensaje
+            maestras[i][5] = generador_link_wsp(newfrase.join(" "), maestras[i])
+        }
 
-        
-       
-
-       
-       
-
-
-         cell.textContent = maestras[i][j];
-
-
-         
-            
-            
-        
-        
-
-
-
+         cell.textContent = maestras[i][j]; //Añade un nueva celda con la informacion
 
 
         // Añadimos la celda a la fila
@@ -326,6 +309,15 @@ function nuevotexto(array,datos) {
 
 }
 
+//----------------------FUNCION PARA CREAR EL LINK---------------------------------------
+function generador_link_wsp(mensaje,datos){
+    
+    let numero = datos[1]
+    
+    let url = `<a href="https://api.whatsapp.com/send?phone=${numero}&text=${mensaje}">Enviar Mensaje</a>`
+    
+    return url
+}
 
 
 //--------------------FUNCIONES UTILES----------------------
