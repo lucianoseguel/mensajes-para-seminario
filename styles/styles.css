@@ -1,12 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-*{
-    font-family: sans-serif;
+:root{
+    --Main_Font--: "Source Sans 3", sans-serif;
+    --barn-red: #780000ff;
+--fire-brick: #c1121fff;
+--papaya-whip: #fdf0d5ff;
+--prussian-blue: #003049ff;
+--air-superiority-blue: #669bbcff;
+
+
 }
 
 
 
 
+*{
+    font-family: var(--Main_Font--);
+    font-optical-sizing: auto;
+  
+  font-style: normal;
+}
 
 
+aside{
+    display: inline;
+}
 
+td{
+    text-align: center;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+    border: black 1px solid;
+    margin: 4px 6px;
+    padding: 1px 5px;
+
+}
+
+a:hover{
+   
+    background-color: aquamarine;
+}
+
+textarea{
+    padding: 8px;
+}
+
+#caja{
+    display: inline;
+}
+
+.instructivo{
+    display: inline;
+}
