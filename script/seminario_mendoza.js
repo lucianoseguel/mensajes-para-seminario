@@ -1,5 +1,14 @@
 // Funciones principales para maestras de seminario
 
+const validado = sessionStorage.getItem("validado");
+if (validado === null) {
+    alert("Inicie sesion para continuar");
+    window.location.hrefa = 'index.html'
+} else {
+    console.log('Adentro')
+}
+
+
 
 //ARRAY GLOBAL DE LAS MAEASTRAS 
 const todaslasestacas = [
