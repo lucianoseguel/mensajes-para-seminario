@@ -20,15 +20,13 @@ let pass = inputpassword.addEventListener('input',function(){
     
 
 
-function verificador(){
-    
-    
-    
+ function verificador(event) {
 
-    if (toString(user)  == usuario && toString(pass) == contrasena) {
-        window.location.href = 'index.html';
+    if (toString(user) ==toString(usuario) && toString(pass) == toString(contrasena)){
+        event.preventDefault(); // Evita la recarga
+        window.location.href = 'mensajes.html'; 
     }else{
-        alert('no coincide')
+        event.preventDefault(); // Evita la recarga
+        alert("Usuario o password incorrecto")
     }
-}
-
+ }

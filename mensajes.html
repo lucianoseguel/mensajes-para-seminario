@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp S&i</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+   
+
+    <h1>Lista de Maestras Seminario Mendoza</h1>
+
+
+<aside>
+<section id="caja">
+
+    <label for="mensaje">Mensaje 1 a 1 para maestras</label><br>
+    <textarea name="mensaje" id="mensaje" rows="4" cols="30" placeholder="Escribi tu mensaje"></textarea>
+
+    <label for="estacas">Estaca</label>
+    <select name="estacas" id="estacas">
+        <option value="TODO">TODO</option>
+        <option value="Mendoza">Mendoza</option>
+        <option value="Godoy Cruz">Godoy Cruz</option>
+        <option value="Guaymallen">Guaymallen</option>
+        <option value="Maipu">Maipu</option>
+        <option value="Valle de Uco">Valle de Uco</option>
+        <option value="San Rafael">San Rafael</option>
+        
+        
+    </select>
+</section>
+    <div class="instructivo">
+        <p>Para hacer Mensajes 1 a 1 podes mencionar cada nombre escribiendo lo siguiente</p>
+        <ul>
+            <li>(nombre)</li>
+            <li>(barrio)</li>
+        </ul>
+        <p>Y automaricamente podes ver el cambio</p>
+    </div>
+</aside>
+
+    <main>
+        <hr>
+    <p id="textarray"></p>
+
+
+    <table id="maestrasTable" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Rol</th>
+                <th>Barrio</th>
+                <th>Mensaje</th>
+                <th>Enviar</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</main>
+    <script src="script/seminario_mendoza.js"></script>
+</body>
+</html>
