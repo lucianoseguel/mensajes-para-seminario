@@ -1,9 +1,12 @@
 // Funciones principales para maestras de seminario
 
 const validado = sessionStorage.getItem("validado");
+
 if (validado === null) {
-    alert("Inicie sesion para continuar");
-    window.location.href = 'index.html'
+
+    
+    window.location.href = 'index.html';
+
 } else {
     console.log('Adentro')
 }
