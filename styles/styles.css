@@ -41,7 +41,7 @@ a{
 
 a:hover{
    
-    background-color: aquamarine;
+    background-color: #f4a261;
 }
 
 textarea{
@@ -49,7 +49,8 @@ textarea{
 }
 
 #caja{
-    display: inline;
+    
+    position:static;
 }
 
 .instructivo{
