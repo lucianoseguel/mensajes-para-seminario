@@ -3,7 +3,7 @@
 const validado = sessionStorage.getItem("validado");
 if (validado === null) {
     alert("Inicie sesion para continuar");
-    window.location.hrefa = 'index.html'
+    window.location.href = 'index.html'
 } else {
     console.log('Adentro')
 }
