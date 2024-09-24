@@ -213,7 +213,7 @@ estaca.addEventListener('input', function(){
 
 
 
-setInterval(table,100)
+setInterval(table,1000)
 
 
 setInterval(console.clear,5000)
